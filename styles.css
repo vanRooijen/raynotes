@@ -1,78 +1,123 @@
-/* Gruvbox Dark Theme */
+/* styles.css */
 
-/* Colors */
+@font-face {
+  font-family: 'CaskaydiaCove Nerd Font';
+  src: url('CaskaydiaCoveNerdFont-Regular.ttf') format('truetype');
+}
+
+/* Gruvbox color palette */
 :root {
-    --background: #282828;
-    --foreground: #ebdbb2;
-    --comment: #928374;
-    --red: #cc241d;
-    --green: #98971a;
-    --yellow: #d79921;
-    --blue: #458588;
-    --purple: #b16286;
-    --aqua: #689d6a;
-    --orange: #d65d0e;
-  }
-  
-  /* General Styles */
-  body {
-    background-color: var(--background);
-    color: var(--foreground);
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    color: var(--blue);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: var(--aqua);
-  }
-  
-  /* Header and Navigation */
-  header {
-    background-color: var(--comment);
-    padding: 1rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 1rem;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  /* Main Sections */
-  section {
-    padding: 2rem;
-  }
-  
-  h1, h2 {
-    margin-bottom: 1rem;
-  }
-  
-  h2 {
-    margin-top: 2rem;
-  }
-  
-  p, ul {
-    margin-bottom: 1rem;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: var(--comment);
-    padding: 1rem;
-    text-align: center;
-  }
+  --gruvbox-dark0: #282828;
+  --gruvbox-dark1: #3c3836;
+  --gruvbox-dark2: #504945;
+  --gruvbox-dark3: #665c54;
+  --gruvbox-dark4: #7c6f64;
+  --gruvbox-light0: #fbf1c7;
+  --gruvbox-light1: #ebdbb2;
+  --gruvbox-light2: #d5c4a1;
+  --gruvbox-light3: #bdae93;
+  --gruvbox-light4: #a89984;
+  --gruvbox-bright-red: #fb4934;
+  --gruvbox-bright-green: #b8bb26;
+  --gruvbox-bright-yellow: #fabd2f;
+  --gruvbox-bright-blue: #83a598;
+  --gruvbox-bright-purple: #d3869b;
+  --gruvbox-bright-aqua: #8ec07c;
+  --gruvbox-bright-orange: #fe8019;
+}
+
+body {
+  font-family: 'CaskaydiaCove Nerd Font', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: var(--gruvbox-dark0);
+  color: var(--gruvbox-light1);
+}
+
+header {
+  background-color: var(--gruvbox-dark1);
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: var(--gruvbox-light1);
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--gruvbox-bright-orange);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  color: var(--gruvbox-bright-yellow);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+ul, article {
+  background-color: var(--gruvbox-dark2);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+ul li, article {
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+ul li:hover, article:hover {
+  background-color: var(--gruvbox-dark3);
+}
+
+ul li:last-child, article:last-child {
+  margin-bottom:0;
+}
+
+ul li a, article a {
+color: var(--gruvbox-light1);
+text-decoration: none;
+transition: color 0.3s;
+}
+
+ul li a:hover, article a:hover {
+color: var(--gruvbox-bright-orange);
+}
+
+footer {
+background-color: var(--gruvbox-dark1);
+padding: 1rem 0;
+text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+nav {
+flex-direction: column;
+}
+
+nav a {
+margin: 0.5rem 0;
+}
+
+main {
+padding: 1rem;
+}
+}
