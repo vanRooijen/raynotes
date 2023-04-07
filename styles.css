@@ -1,10 +1,5 @@
 /* styles.css */
 
-@font-face {
-  font-family: 'CaskaydiaCove Nerd Font';
-  src: url('CaskaydiaCoveNerdFont-Regular.ttf') format('truetype');
-}
-
 /* Gruvbox color palette */
 :root {
   --gruvbox-dark0: #282828;
@@ -27,7 +22,7 @@
 }
 
 body {
-  font-family: 'CaskaydiaCove Nerd Font', monospace;
+  font-family: 'Fira Code', monospace;
   margin: 0;
   padding: 0;
   background-color: var(--gruvbox-dark0);
@@ -45,15 +40,6 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-}
-
-
-body {
-  font-family: 'CaskaydiaCove NF', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #ebdbb2;
-  background-color: #282828;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,34 +88,49 @@ section {
   margin-bottom: 2rem;
 }
 
+section:last-child {
+  margin-bottom: 0;
+}
+
 /* Favorite books and scientific papers */
 section ul {
   list-style-type: none;
   padding: 0;
+  
 }
 
-section li {
+section li, article {
   margin-bottom: 1.5rem;
   padding: 1.5rem;
   background-color: #3c3836;
   border-radius: 0.25rem;
 }
 
-/* Thoughts & Reflections */
-section article {
-  margin-bottom: 1.5rem;
-  padding: 1.5rem;
-  background-color: #3c3836;
-  border-radius: 0.25rem;
+section li, article {
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s;
 }
+
+section li:hover, article:hover {
+  background-color: var(--gruvbox-dark3);
+}
+
+section li:last-child, article:last-child {
+  margin-bottom:0;
+}
+
+section li a, article a {
+color: var(--gruvbox-bright-blue);
+text-decoration: none;
+transition: color 0.3s;
+}
+
+section li a:hover, article a:hover {
+color: var(--gruvbox-bright-orange);
+}
+
 
 /* Footer */
-footer {
-  background-color: #3c3836;
-  padding: 1rem;
-  text-align: center;
-}
-
 footer {
 background-color: var(--gruvbox-dark1);
 padding: 1rem 0;
