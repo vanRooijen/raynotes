@@ -39,91 +39,6 @@ header {
   padding: 1rem 0;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-}
-
-nav a {
-  color: var(--gruvbox-light1);
-  text-decoration: none;
-  margin: 0 1rem;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: var(--gruvbox-bright-orange);
-}
-
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-h1, h2, h3 {
-  color: var(--gruvbox-bright-yellow);
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-section:last-child {
-  margin-bottom: 0;
-}
-
-ul, article {
-  background-color: var(--gruvbox-dark2);
-  border-radius: 5px;
-  padding: 1rem;
-}
-
-ul li, article {
-  margin-bottom: 0.5rem;
-  transition: background-color 0.3s;
-}
-
-ul li:hover, article:hover {
-  background-color: var(--gruvbox-dark3);
-}
-
-ul li:last-child, article:last-child {
-  margin-bottom:0;
-}
-
-ul li a, article a {
-color: var(--gruvbox-light1);
-text-decoration: none;
-transition: color 0.3s;
-}
-
-ul li a:hover, article a:hover {
-color: var(--gruvbox-bright-orange);
-}
-
-footer {
-background-color: var(--gruvbox-dark1);
-padding: 1rem 0;
-text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-nav {
-flex-direction: column;
-}
-
-nav a {
-margin: 0.5rem 0;
-}
-
-main {
-padding: 1rem;
-}
-}
-
-/* New styles */
-
 /* General styles */
 body {
   font-family: 'CaskaydiaCove NF', sans-serif;
@@ -203,8 +118,27 @@ footer {
   text-align: center;
 }
 
-/* Hamburger button */
-/* Responsive navigation styles */
+footer {
+background-color: var(--gruvbox-dark1);
+padding: 1rem 0;
+text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+nav {
+flex-direction: column;
+}
+
+nav a {
+margin: 0.5rem 0;
+}
+
+main {
+padding: 1rem;
+}
+}
+
+/* ----------------------------------------------------------------------- */
 
 /* Hamburger button */
 .hamburger {
