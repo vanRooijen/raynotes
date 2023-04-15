@@ -69,13 +69,8 @@ nav a {
 
 nav a:hover {
   color: var(--gruvbox-bright-orange);
-  background-color: #504945;
+  background-color: var(--gruvbox-dark2);
   border-radius: 0.25rem;
-}
-
-/* Main content sections */
-main {
-  padding: 2rem;
 }
 
 section {
@@ -96,7 +91,7 @@ section ul {
 section li, article {
   margin-bottom: 1.5rem;
   padding: 1.5rem;
-  background-color: #3c3836;
+  background-color: var(--gruvbox-dark2);
   border-radius: 0.25rem;
 }
 
@@ -170,7 +165,7 @@ padding: 1rem;
 }
 
 .nav-link:hover {
-  background-color: #504945;
+  background-color: var(--gruvbox-dark2);
   border-radius: 0.25rem;
 }
 
