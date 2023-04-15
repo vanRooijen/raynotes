@@ -25,12 +25,12 @@ body {
   font-family: 'Fira Code', monospace;
   margin: 0;
   padding: 0;
-  background-color: var(--gruvbox-dark2);
+  background-color: var(--gruvbox-dark1);
   color: var(--gruvbox-light1);
 }
 
 header {
-  background-color: var(--gruvbox-dark1);
+  background-color: var(--gruvbox-dark0);
   padding: 1rem 0;
 }
 
@@ -52,12 +52,6 @@ a {
 
 a:hover {
   color: #d79921;
-}
-
-/* Header and navigation */
-header {
-  background-color: #3c3836;
-  padding: 1rem;
 }
 
 nav {
@@ -132,7 +126,7 @@ color: var(--gruvbox-bright-orange);
 
 /* Footer */
 footer {
-background-color: var(--gruvbox-dark1);
+background-color: var(--gruvbox-dark0);
 padding: 1rem 0;
 text-align: center;
 }
