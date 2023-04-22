@@ -192,6 +192,7 @@ padding: 1rem;
   position: relative;
   overflow: hidden;
   padding-top: 56.25%; /* Maintain aspect ratio for 16:9 videos */
+  width: 100%;
 }
 
 .responsive-iframe-container iframe {
